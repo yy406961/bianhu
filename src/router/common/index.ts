@@ -1,10 +1,5 @@
 export const commonRouter = [
     {
-        path: '/',
-        name: 'home',
-        component: () => import('@/views/Home.vue')
-    },
-    {
         path: '/about',
         name: 'about',
         // route level code-splitting
