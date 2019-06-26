@@ -1,6 +1,8 @@
 <template>
     <div class="home">
-        <div class="card home__content">主要内容</div>
+        <div class="card home__content">
+            <router-view></router-view>
+        </div>
         <div class="home__sideBar">
             <div class="card">1</div>
             <div class="card">2</div>
@@ -11,12 +13,9 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
 
 @Component({
-    components: {
-        HelloWorld
-    }
+    components: {}
 })
 export default class Home extends Vue {}
 </script>

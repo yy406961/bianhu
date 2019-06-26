@@ -2,11 +2,10 @@
     <div class="header">
         <div class="header__container">
             <div>
-                header
-            </div>
-            <div>
-                <router-link to="/">Home</router-link> |
-                <router-link to="/about">About</router-link>
+                <router-link to="/">首页</router-link> |
+                <router-link to="/follow">关注</router-link> |
+                <router-link to="/hot">热榜</router-link> |
+                <router-link to="/people">个人中心</router-link>
             </div>
         </div>
     </div>
