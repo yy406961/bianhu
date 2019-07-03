@@ -30,7 +30,7 @@ input:-webkit-autofill {
 a,
 a:focus,
 a:hover {
-    color: inherit;
+    color: $hover-fColor;
     outline: none;
     text-decoration: none;
 }

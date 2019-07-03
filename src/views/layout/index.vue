@@ -31,7 +31,7 @@ export default class Layout extends Vue {
     private isLogin: boolean = false
 
     mounted() {
-        if (storage.local.storage.lastuser) {
+        if (storage.session.storage.lastuser) {
             this.isLogin = true
         } else {
             this.$router.push('/signin')

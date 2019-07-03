@@ -90,6 +90,7 @@ export default class sign extends Vue {
             }.bind(this),
             false
         )
+        this.loadAccountInfo()
     }
     // 输入验证
     Verification() {
@@ -125,7 +126,7 @@ export default class sign extends Vue {
             .then((resp: any) => {
                 this.$emit('change', true)
                 this.$router.push({ path: '/' })
-                storage.local.set('lastuser', resp.data.userId)
+                storage.session.set('lastuser', resp.data.userId)
                 this.disposeCookies()
             })
             .catch((err: any) => {
