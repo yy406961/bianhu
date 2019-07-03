@@ -5,6 +5,10 @@ import store from '@/store'
 import ElementUI from 'element-ui'
 import '@/styles/index.scss'
 
+if (process.env.NODE_ENV !== 'production') {
+    require('./mock/index')
+}
+
 Vue.use(ElementUI)
 Vue.config.productionTip = false
 
